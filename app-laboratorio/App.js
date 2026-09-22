@@ -21,15 +21,16 @@ function verificarResultado(media) {
 }
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>{eu.nome}</Text>
-      <Text>{eu.idade}</Text>
-      <Text>{eu.cidade}</Text>
-      <Text>Média: {calcularMedia(eu)}</Text>
-      <Text>{verificarResultado(calcularMedia(eu))}</Text>
-    </View>
-  );
+ return (
+  <View style={styles.container}>
+    {eu.nome}
+    <Text>{eu.idade}</Text>
+    <Text>{eu.cidade}</Text>
+    <Text>Média: {calcularMedia(eu)}</Text>
+    <Text>{verificarResultado(calcularMedia(eu))}</Text>
+  </View>
+);
+
 }
 
 const styles = StyleSheet.create({
