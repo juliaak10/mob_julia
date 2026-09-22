@@ -12,6 +12,14 @@ function calcularMedia(pessoa) {
   return (pessoa.nota1 + pessoa.nota2) / 2;
 }
 
+function verificarResultado(media) {
+  if (media >= 6) {
+    return "Aprovado";
+  } else {
+    return "Em recuperacao";
+  }
+}
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -19,6 +27,7 @@ export default function App() {
       <Text>{eu.idade}</Text>
       <Text>{eu.cidade}</Text>
       <Text>Média: {calcularMedia(eu)}</Text>
+      <Text>{verificarResultado(calcularMedia(eu))}</Text>
     </View>
   );
 }
