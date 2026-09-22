@@ -1,12 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-
-
+const eu = {
+  nome: "Gaby",
+  idade: 17,
+  cidade: "Cascavel"
+};
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Julia</Text>
+      <Text>{eu.nome}</Text>
+      <Text>{eu.idade}</Text>
+      <Text>{eu.cidade}</Text>
     </View>
   );
 }
